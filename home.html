@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steganografi Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                950: "#0c1a29",
+                900: "#111e32",
+                800: "#162b40",
+                500: "#3b82f6",
+                400: "#60a5fa",
+                300: "#93c5fd",
+                100: "#dbeafe",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary-950 text-primary-100 min-h-screen font-sans">
+    <nav class="bg-primary-900 border-b border-primary-700 sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 rounded bg-primary-500 flex items-center justify-center text-white font-bold"
+          >
+            S
+          </div>
+          <span class="text-xl font-bold text-primary-200"
+            >Stegano<span class="text-primary-400">ID</span></span
+          >
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="#"
+            class="text-primary-300 hover:text-primary-100 transition-colors"
+            >Beranda</a
+          >
+          <a
+            href="/steganography.html"
+            class="text-primary-300 hover:text-primary-100 transition-colors"
+            >Steganografi</a
+          >
+          <a
+            href="#fitur"
+            class="text-primary-300 hover:text-primary-100 transition-colors"
+            >Fitur</a
+          >
+          <a
+            href="#member"
+            class="text-primary-300 hover:text-primary-100 transition-colors"
+            >Tim</a
+          >
+          <a
+            href="https://github.com/Pariddd"
+            class="text-primary-300 hover:text-primary-100 transition-colors"
+            >Github</a
+          >
+        </div>
+        <button class="md:hidden text-primary-300 focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <header
+      class="container mx-auto px-4 py-16 flex flex-col md:flex-row justify-between items-center gap-8"
+    >
+      <div class="text-center md:text-left max-w-lg">
+        <h1 class="text-3xl md:text-4xl font-bold text-primary-300">
+          Steganografi Digital
+        </h1>
+        <p class="mt-4 text-primary-200">
+          Sebuah aplikasi yang dirancang untuk memenuhi Tugas A2 Mata Kuliah
+          Kriptografi dan Steganografi, yang berfokus pada penerapan teknik
+          penyandian dan penyembunyian pesan rahasia ke dalam file digital guna
+          menjaga keamanan dan kerahasiaan informasi.
+        </p>
+      </div>
+      <div class="relative">
+        <div
+          class="w-80 h-45 bg-primary-800 border-2 border-primary-400 rounded-lg shadow-xl overflow-hidden"
+        >
+          <img
+            src="stega.gif"
+            alt="Secure Animation"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="container mx-auto px-4 py-10 text-center">
+      <p class="text-xl text-primary-200 mb-6">Siap menyembunyikan pesan?</p>
+      <a
+        href="/steganography.html"
+        class="inline-block bg-primary-500 hover:bg-primary-400 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+      >
+        Mulai Steganografi
+      </a>
+    </section>
+    <section class="container mx-auto px-4 py-12">
+      <h2
+        class="text-2xl md:text-3xl font-bold text-primary-300 text-center mb-6"
+      >
+        Apa Itu Steganografi?
+      </h2>
+      <p class="text-primary-200 max-w-3xl mx-auto text-center leading-relaxed">
+        Steganografi adalah teknik menyembunyikan informasi dalam file atau
+        media lain untuk menghindari deteksi. Kata steganografi berasal dari
+        bahasa Yunani, yaitu steganos (tersembunyi) dan graphein (menulis).
+        Teknik ini bukanlah hal baru, melainkan sudah digunakan selama ribuan
+        tahun.
+      </p>
+    </section>
+    <section class="container mx-auto px-4 py-12" id="fitur">
+      <h2
+        class="text-2xl md:text-3xl font-bold text-primary-300 text-center mb-10"
+      >
+        Fitur Kami
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
+      >
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center hover:border-primary-400 transition-colors duration-300"
+        >
+          <div class="text-5xl mb-4">📄</div>
+          <h3 class="text-lg font-semibold text-primary-200">
+            Steganografi Dokumen/PDF
+          </h3>
+        </div>
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center hover:border-primary-400 transition-colors duration-300"
+        >
+          <div class="text-5xl mb-4">🖼️</div>
+          <h3 class="text-lg font-semibold text-primary-200">
+            Steganografi Gambar (JPEG/PNG)
+          </h3>
+        </div>
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center hover:border-primary-400 transition-colors duration-300"
+        >
+          <div class="text-5xl mb-4">🔊</div>
+          <h3 class="text-lg font-semibold text-primary-200">
+            Steganografi Audio (MP3)
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 py-12" id="member">
+      <h2
+        class="text-2xl md:text-3xl font-bold text-primary-300 text-center mb-10"
+      >
+        Tim Kami
+      </h2>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"
+      >
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center"
+        >
+          <img
+            src="https://placehold.co/150x150/1e40af/white?text=FK"
+            alt="Anggota 1"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="font-semibold text-primary-200">Farid Kurniawan</h3>
+          <p class="text-primary-300 text-sm mt-1">230170069</p>
+        </div>
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center"
+        >
+          <img
+            src="https://placehold.co/150x150/1e40af/white?text=AM"
+            alt="Anggota 2"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="font-semibold text-primary-200">Abdul Muzakky</h3>
+          <p class="text-primary-300 text-sm mt-1">230170050</p>
+        </div>
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center"
+        >
+          <img
+            src="https://placehold.co/150x150/1e40af/white?text=NAM"
+            alt="Anggota 3"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="font-semibold text-primary-200">Nuafal Aziz Mulyono</h3>
+          <p class="text-primary-300 text-sm mt-1">230170068</p>
+        </div>
+        <div
+          class="bg-primary-900 border border-primary-600 rounded-xl p-6 text-center"
+        >
+          <img
+            src="https://placehold.co/150x150/1e40af/white?text=AFM"
+            alt="Anggota 4"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h3 class="font-semibold text-primary-200">Ahmat Fahri Matondang</h3>
+          <p class="text-primary-300 text-sm mt-1">240170058</p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-6 text-center text-primary-400 text-sm border-t border-primary-800"
+    >
+      &copy; 2025 Tim Steganografi Digital. All rights reserved.
+    </footer>
+  </body>
+</html>
